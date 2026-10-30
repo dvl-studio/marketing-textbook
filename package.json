@@ -1,0 +1,21 @@
+{
+  "name": "marketing-classics",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "行銷與消費者行為的十三堂經典課（VitePress 網站）",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

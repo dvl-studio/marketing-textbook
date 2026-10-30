@@ -1,0 +1,65 @@
+/* 品牌色取自原 Word 閱讀本：青綠 / 深藍 / 金 / 暗紅 */
+:root {
+  --vp-c-brand-1: #147d7e;
+  --vp-c-brand-2: #0f6667;
+  --vp-c-brand-3: #0b5253;
+  --vp-c-brand-soft: rgba(20, 125, 126, 0.14);
+  --vp-font-family-base: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', 'Heiti TC', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #147d7e 30%, #17324d);
+}
+.dark {
+  --vp-c-brand-1: #3cc3c4;
+  --vp-c-brand-2: #2aa9aa;
+  --vp-c-brand-3: #1f8c8d;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #3cc3c4 30%, #9ec5e8);
+}
+
+/* 閱讀體驗 */
+.vp-doc { font-size: 17px; line-height: 1.95; }
+.vp-doc p { margin: 14px 0; }
+.vp-doc h1 { line-height: 1.4; letter-spacing: 0.01em; }
+.vp-doc h2 { margin-top: 40px; }
+.vp-doc li + li { margin-top: 4px; }
+
+/* 章節標籤 */
+.chapter-label {
+  margin: 0 0 -8px !important;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #c98a2e;
+}
+.dark .chapter-label { color: #e1b26a; }
+
+/* 副標 */
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  border-radius: 0 8px 8px 0;
+  padding: 4px 16px;
+}
+.vp-doc blockquote p { margin: 8px 0; }
+
+/* 表格：沿用原書的青綠表頭 */
+.vp-doc table { font-size: 15px; line-height: 1.7; }
+.vp-doc th {
+  background: #147d7e;
+  color: #fff;
+  white-space: nowrap;
+}
+.dark .vp-doc th { background: #0f6667; }
+.vp-doc td, .vp-doc th { padding: 8px 12px; vertical-align: top; }
+.vp-doc td:first-child { min-width: 5.5em; }
+
+/* 提示框標題 */
+.vp-doc .custom-block-title { font-weight: 700; }
+
+@media (max-width: 768px) {
+  .vp-doc { font-size: 16px; }
+  .vp-doc table { font-size: 14px; }
+  .vp-doc th { white-space: normal; }
+}
+@media print {
+  .VPNav, .VPSidebar, .VPDocFooter, .VPLocalNav { display: none !important; }
+}
