@@ -2,6 +2,9 @@
 
 以 [VitePress](https://vitepress.dev/) 建置的中文線上閱讀本，內容由 Word 檔《六項疑點查核修正版 v4》轉換而來，共 13 章、4 個部分。
 
+##Link
+https://dvl-studio.github.io/marketing-textbook/
+
 ## 本機測試
 
 需要 Node.js 18 以上（建議 22）。
